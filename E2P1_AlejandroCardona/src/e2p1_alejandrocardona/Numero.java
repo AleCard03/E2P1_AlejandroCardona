@@ -17,6 +17,10 @@ public class Numero {
         this.num = decToBase(numN);
     }
     
+    public Numero(){
+        
+    }
+    
     public char numToChar(int res){
         char numero = ' ';
         for (int i = 1; i<35; i++){
@@ -69,7 +73,6 @@ public class Numero {
         for (int i = 0; i<conversion.length();i++){
             ups+=conversion.charAt(conversion.length()-1-i);
         }//fin for corregir string orden
-        System.out.println(ups);
         return ups;
         
     }//fin method decToBase
